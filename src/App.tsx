@@ -187,6 +187,9 @@ function App() {
         </Typography>
       </Grid>
       <Grid xs={12}>
+        <Typography variant="body2" color={"primary"}>
+          Please type "@" to see the options
+        </Typography>
         <CodeMirror
           value={code}
           style={{
