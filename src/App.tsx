@@ -8,6 +8,7 @@ import { Decoration, ViewPlugin } from "@codemirror/view";
 import { RangeSetBuilder } from "@codemirror/state";
 import { evaluate } from "mathjs";
 import { Button, Grid, Typography, useTheme } from "@mui/material";
+import { useResultStore } from "./store/useResultStore";
 
 function App() {
   const { palette } = useTheme();
@@ -15,7 +16,10 @@ function App() {
   const [mentionValues, setMentionValues] = useState<
     { name: string; value: string }[]
   >([]);
-  const [result, setResult] = useState<string | null>(null);
+
+  // Zustand store
+  const result = useResultStore((s) => s.result);
+  const setResult = useResultStore((s) => s.setResult);
 
   // Queries
   const { data } = useQuery({
