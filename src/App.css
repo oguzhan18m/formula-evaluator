@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.mention-highlight {
+  background-color: #f1eeef;
+  border-radius: 20px;
+  padding: 4px;
+  border: 1px solid grey;
+  font-family: "Source Code Pro", monospace !important;
+}
+
+.App {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Source Code Pro", monospace !important;
+}
+.cm-editor {
+  outline: none !important;
+}
+.cm-activeLine {
+  background-color: white !important;
+  min-height: 56px !important;
+  font-size: 16px !important;
+  font-family: "Source Code Pro", monospace !important;
+  font-optical-sizing: auto;
+  line-height: 54px !important;
+  border: 1px solid grey;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  outline: none !important;
+  padding: 0px 20px !important;
+}
+
+.cm-scroller {
+  overflow-y: hidden !important;
+  font-family: "Source Code Pro", monospace !important;
+}
